@@ -26,12 +26,13 @@ Requisitos: **Python 3.10 ou superior** (o programa usa `match/case`). Não é p
 
 **1. Baixe o repositório para o seu computador.** O programa roda localmente, então é preciso ter os arquivos na sua máquina antes de executar.
 
-Repositório: [LINK DO REPOSITÓRIO](https://github.com/analuisa-pimentel/GS_CitizenTech/tree/main/python)
+Repositório: [GS_CitizenTech](https://github.com/analuisa-pimentel/GS_CitizenTech)
 
 Com Git:
 
 ```bash
-git clone https://github.com/analuisa-pimentel/GS_CitizenTech/tree/main/python.git
+git clone https://github.com/analuisa-pimentel/GS_CitizenTech.git
+cd GS_CitizenTech
 cd python
 python main.py
 ```
