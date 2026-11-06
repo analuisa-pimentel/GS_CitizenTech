@@ -14,7 +14,7 @@ Abrigos inteligentes para tornar a espera pelo ônibus mais protegida do calor e
 | **Problema, em uma frase** | Passageiros esperam ônibus sob calor intenso em pontos com pouca proteção, e faltam uma proteção que funcione na hora certa e dados para decidir quais pontos melhorar primeiro |
 | **Como funciona** | Um abrigo com sombra e sensores de temperatura, umidade e movimento: quando há calor e passageiros esperando, a ventilação liga sozinha, sem precisar de celular ou internet. Os dados de cada ponto mostram onde a cidade deve investir primeiro |
 | **O que cada parte faz** | Sensor e circuito decidem e acionam a ventilação no abrigo; programa em Python analisa as leituras e ordena os pontos por prioridade; site apresenta a solução e simula seu funcionamento; matemática estima o calor ao longo do dia e a energia gasta (detalhes por disciplina abaixo) |
-| **Link do repositório** | `https://github.com/usuario/repositorio` |
+| **Link do repositório** | `https://github.com/analuisa-pimentel/GS_CitizenTech/` |
 | **Indicador de impacto** | Minutos de calor com passageiros esperando em cada ponto, energia economizada pela ventilação sob demanda e compreensão dos avisos pelos usuários |
 | **ODS conectados** | 11 · Cidades e comunidades sustentáveis · 13 · Ação contra a mudança do clima · 10 · Redução das desigualdades · 3 · Saúde e bem-estar |
 
