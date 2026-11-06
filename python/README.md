@@ -31,7 +31,7 @@ Repositório: [LINK DO REPOSITÓRIO](https://github.com/analuisa-pimentel/GS_Cit
 Com Git:
 
 ```bash
-git clone https://github.com/analuisa-pimentel/GS_CitizenTech/tree/main/python
+git clone https://github.com/analuisa-pimentel/GS_CitizenTech/tree/main/python.git
 cd python
 python main.py
 ```
