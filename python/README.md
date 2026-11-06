@@ -26,13 +26,14 @@ Requisitos: **Python 3.10 ou superior** (o programa usa `match/case`). Não é p
 
 **1. Baixe o repositório para o seu computador.** O programa roda localmente, então é preciso ter os arquivos na sua máquina antes de executar.
 
-Repositório: [LINK DO REPOSITÓRIO](https://github.com/usuario/repositorio)
+Repositório: [LINK DO REPOSITÓRIO](https://github.com/analuisa-pimentel/GS_CitizenTech/tree/main/python)
 
 Com Git:
 
 ```bash
-git clone https://github.com/usuario/repositorio.git
-cd repositorio
+git clone https://github.com/analuisa-pimentel/GS_CitizenTech/tree/main/python
+cd python
+python main.py
 ```
 
 Sem Git: no GitHub, clique em **Code → Download ZIP**, extraia o arquivo e abra o terminal dentro da pasta extraída.
