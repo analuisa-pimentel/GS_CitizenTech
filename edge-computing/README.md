@@ -1,4 +1,2 @@
 ## Link do Wokwi
-```
-https://wokwi.com/projects/480069093787737089
-```
+`https://wokwi.com/projects/480069093787737089`
