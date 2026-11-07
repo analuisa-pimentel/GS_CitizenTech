@@ -26,7 +26,7 @@ Abrigos inteligentes para tornar a espera pelo ônibus mais protegida do calor e
 
 ### Edge Computing & Computer Systems
 Circuito no Wokwi com ESP32, sensor de temperatura e umidade (DHT22) e sensor de movimento (PIR). Classifica o calor em Normal, Atenção e Calor elevado, aciona a ventilação no modo correspondente quando há passageiros, sinaliza o estado com LEDs e trata falhas do sensor.
-📁 [`edge/`](edge/)
+📁 [`edge-computing/`](edge-computing/)
 
 ### Computational Thinking with Python
 Programa de terminal que analisa leituras simuladas de três pontos de ônibus, classifica cada leitura, decide o modo da ventilação, calcula média, maior temperatura e % em alerta, estima a energia e monta um ranking experimental de prioridade.
@@ -38,11 +38,11 @@ Modelagem da temperatura ao longo do dia com uma função senoidal, estimativa d
 
 ### Front-End Design
 Landing page em HTML e CSS que apresenta o problema do calor nos pontos de ônibus, a solução, o funcionamento e o impacto esperado.
-📁 [`site/`](site/)
+📁 [`frontend-webdev/`](frontend-webdev/)
 
 ### Web Development
 Interações em JavaScript na mesma página: simulador de temperatura e movimento com a mesma regra do circuito e do Python, ranking dos pontos simulados e modo claro/escuro.
-📁 [`site/`](site/)
+📁 [`frontend-webdev/`](frontend-webdev/)
 
 ### Software & Total Experience Design
 Escopo da solução, jornada do passageiro e do gestor público, requisitos funcionais, não funcionais e regras de negócio, e backlog com histórias de usuário priorizadas.
