@@ -1,0 +1,198 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #F5FBFC;
+    color: #12313B;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    background-color: #0F3D4C;
+    color: #FFFFFF;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.marca {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: #FFFFFF;
+}
+
+.marca strong {
+    font-family: 'Sora', sans-serif;
+    font-size: 24px;
+}
+
+.marca span {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #72DFF2;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    list-style: none;
+}
+
+nav a {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #72DFF2;
+}
+
+a:focus-visible {
+    outline: 3px solid #72DFF2;
+    outline-offset: 4px;
+}
+
+
+/* HERO */
+
+.hero {
+    background-color: #EAF7F8;
+    padding: 110px 0;
+}
+
+.hero p:first-child {
+    color: #006C68;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    color: #0F3D4C;
+    font-size: 48px;
+    line-height: 1.2;
+    max-width: 750px;
+    margin-bottom: 24px;
+}
+
+.hero p:last-of-type {
+    color: #536B75;
+    max-width: 650px;
+    margin-bottom: 32px;
+}
+
+.hero a {
+    display: inline-block;
+    background-color: #20C7BE;
+    color: #12313B;
+    font-weight: 600;
+    padding: 16px 28px;
+    border-radius: 8px;
+}
+
+.hero a:hover {
+    background-color: #72DFF2;
+}
+
+
+/* SEÇÕES */
+
+main section {
+    padding: 84px 0;
+}
+
+main section:nth-of-type(odd) {
+    background-color: #EAF7F8;
+}
+
+section h2 {
+    color: #0F3D4C;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+section p {
+    max-width: 780px;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background-color: #0F3D4C;
+    color: #FFFFFF;
+    padding: 32px 0;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+
+/* TELAS MENORES */
+
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 12px 20px;
+    }
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    main section {
+        padding: 64px 0;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+}
