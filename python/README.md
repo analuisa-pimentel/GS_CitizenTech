@@ -1,6 +1,6 @@
 > Ficha da CitizenTech e visão geral do projeto: [README principal](../README.md)
 
-# Ponto Fresco Ativo · Python
+# Ponto Fresco · Python
 
 **Global Solution 2026.2 · FIAP · CitizenTech**
 Disciplina: Computational Thinking with Python · Engenharia de Software, 1º ano
@@ -14,7 +14,7 @@ Disciplina: Computational Thinking with Python · Engenharia de Software, 1º an
 
 ## Sobre o programa
 
-O **Ponto Fresco Ativo** é uma proposta de abrigo inteligente para pontos de ônibus da Zona Norte do Rio de Janeiro. Ele combina sombra, ventilação acionada automaticamente pelo calor e pela presença de passageiros, e dados que ajudam a decidir quais pontos devem ser melhorados primeiro.
+O **Ponto Fresco** é uma proposta de abrigo inteligente para pontos de ônibus da Zona Norte do Rio de Janeiro. Ele combina sombra, ventilação acionada automaticamente pelo calor e pela presença de passageiros, e dados que ajudam a decidir quais pontos devem ser melhorados primeiro.
 
 Este programa é o "cérebro" da solução. Ele analisa leituras de **temperatura, umidade e movimento** em pontos de ônibus, **classifica** cada leitura, **decide o modo da ventilação** do abrigo, **resume** as condições e monta um **ranking experimental de prioridade** entre os pontos.
 

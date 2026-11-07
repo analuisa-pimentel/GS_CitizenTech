@@ -1,5 +1,5 @@
 """
-CITIZENTECH - PONTO FRESCO ATIVO - PYTHON - DADOS SIMULADOS
+CITIZENTECH - PONTO FRESCO - PYTHON - DADOS SIMULADOS
 """
 
 """ -- CONSTANTES -- """
@@ -109,7 +109,7 @@ def ler_movimento():
 
 
 def menu():
-    print('\n=== Ponto Fresco Ativo · Zona Norte (dados simulados) ===')
+    print('\n=== Ponto Fresco · Zona Norte (dados simulados) ===')
     print('1 - Consultar medições de um ponto')
     print('2 - Resumo das condições')
     print('3 - Prioridade dos pontos')

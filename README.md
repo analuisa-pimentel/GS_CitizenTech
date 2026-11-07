@@ -1,4 +1,4 @@
-# Ponto Fresco Ativo
+# Ponto Fresco
 
 **Global Solution 2026.2 · FIAP · CitizenTech** · Engenharia de Software, 1º ano
 
@@ -8,7 +8,7 @@ Abrigos inteligentes para tornar a espera pelo ônibus mais protegida do calor e
 
 | Campo | Definição |
 |---|---|
-| **Nome da CitizenTech** | Ponto Fresco Ativo |
+| **Nome da CitizenTech** | Ponto Fresco |
 | **Cidade e bairro** | Rio de Janeiro · Del Castilho, Zona Norte |
 | **Cidadão beneficiado** | Passageiros de ônibus que esperam o transporte expostos ao calor e têm pouca alternativa a essa espera, especialmente trabalhadores, idosos e pessoas com mobilidade reduzida |
 | **Problema, em uma frase** | Passageiros esperam ônibus sob calor intenso em pontos com pouca proteção, e faltam uma proteção que funcione na hora certa e dados para decidir quais pontos melhorar primeiro |

@@ -1,5 +1,5 @@
 """
-CITIZENTECH - PONTO FRESCO ATIVO - MATEMÁTICA/CÁLCULO - DADOS SIMULADOS
+CITIZENTECH - PONTO FRESCO - MATEMÁTICA/CÁLCULO - DADOS SIMULADOS
 Modelagem da temperatura ao longo do dia (função trigonométrica), dos períodos
 de ventilação (inequação) e do consumo de energia (E = P x t).
 """
@@ -301,7 +301,7 @@ def mostrar_resultados(nome, M, A):
 """ -- MAIN -- """
 
 def main():
-    print('Modelagem Matemática · Ponto Fresco Ativo (cenários simulados)')
+    print('Modelagem Matemática · Ponto Fresco (cenários simulados)')
     for cenario in CENARIOS:
         nome = cenario[0]
         M = cenario[1]
