@@ -43,17 +43,119 @@
     </header>
 
     <main>
-      <section>
+      <section class="pagina-simulador">
         <div class="container">
-          <h1>Simulador do Ponto Fresco</h1>
+          <div class="simulador-introducao">
+            <p class="simulador-pagina-etiqueta">SIMULADOR INTERATIVO</p>
 
-          <p>
-            Nesta página você poderá testar diferentes condições de temperatura
-            e movimento para compreender o funcionamento da ventilação.
-          </p>
+            <h1>Teste o funcionamento do abrigo.</h1>
 
-          <p>
-            <a href="../index.html"> Voltar à página inicial </a>
+            <p>
+              Informe a temperatura e se há movimento no abrigo para descobrir
+              como o sistema de ventilação responderia.
+            </p>
+          </div>
+
+          <div class="simulador-layout">
+            <!-- FORMULÁRIO -->
+
+            <div class="simulador-painel">
+              <h2>Condições do ambiente</h2>
+
+              <form id="form-simulador">
+                <div class="campo-simulador">
+                  <label for="temperatura"> Temperatura (°C) </label>
+
+                  <input
+                    type="number"
+                    id="temperatura"
+                    name="temperatura"
+                    step="0.1"
+                    placeholder="Ex.: 33"
+                    required
+                  />
+                </div>
+
+                <div class="campo-simulador">
+                  <fieldset class="grupo-movimento">
+                    <legend>Movimento detectado?</legend>
+
+                    <div class="opcoes-movimento">
+                      <label class="opcao-movimento">
+                        <input
+                          type="radio"
+                          name="movimento"
+                          value="sim"
+                          required
+                        />
+                        <span>Sim</span>
+                      </label>
+
+                      <label class="opcao-movimento">
+                        <input
+                          type="radio"
+                          name="movimento"
+                          value="nao"
+                          required
+                        />
+                        <span>Não</span>
+                      </label>
+                    </div>
+                  </fieldset>
+                </div>
+
+                <button
+                  type="button"
+                  id="botao-simular"
+                  class="botao-principal simulador-botao"
+                >
+                  Simular funcionamento
+                </button>
+
+                <p id="mensagem-erro" class="simulador-erro" role="alert"></p>
+              </form>
+            </div>
+
+            <!-- RESULTADO -->
+
+            <div class="simulador-painel">
+              <h2>Resultado da simulação</h2>
+
+              <div
+                class="simulador-status"
+                id="resultado-simulacao"
+                aria-live="polite"
+              >
+                <span>STATUS DO SISTEMA</span>
+
+                <strong id="status-sistema"> Aguardando simulação </strong>
+              </div>
+
+              <div class="simulador-dado">
+                <span>Temperatura</span>
+                <strong id="resultado-temperatura">—</strong>
+              </div>
+
+              <div class="simulador-dado">
+                <span>Condição térmica</span>
+                <strong id="resultado-condicao">—</strong>
+              </div>
+
+              <div class="simulador-dado">
+                <span>Movimento</span>
+                <strong id="resultado-movimento">—</strong>
+              </div>
+
+              <div class="simulador-dado">
+                <span>Ventilação</span>
+                <strong id="resultado-ventilacao">—</strong>
+              </div>
+            </div>
+          </div>
+
+          <p class="simulador-observacao">
+            Simulação acadêmica baseada nas regras experimentais do Ponto
+            Fresco. Os dados não são coletados em tempo real.
           </p>
         </div>
       </section>
