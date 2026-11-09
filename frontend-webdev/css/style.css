@@ -81,25 +81,25 @@ header {
 }
 
 nav ul {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
 }
 
 nav ul li {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 nav a {
-    display: flex;
-    align-items: center;
-    min-height: 30px;
-    color: #FFFFFF;
-    font-size: 14px;
-    font-weight: 500;
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 nav a:hover {
@@ -118,68 +118,67 @@ header a:focus-visible {
 /* BOTÃO CLARO E ESCURO */
 
 .botao-tema {
-    position: relative;
-    display: block;
-    width: 54px;
-    height: 30px;
-    padding: 0;
-    border: 1px solid #71858E;
-    border-radius: 30px;
-    background-color: #536B75;
-    cursor: pointer;
+  position: relative;
+  display: block;
+  width: 54px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid #71858e;
+  border-radius: 30px;
+  background-color: #536b75;
+  cursor: pointer;
 }
 
 /* CÍRCULO DO SELETOR */
 
 .circulo-tema {
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    width: 22px;
-    height: 22px;
-    background-color: #FFFFFF;
-    border-radius: 50%;
-    z-index: 1;
-    transition: transform 0.2s;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  z-index: 1;
+  transition: transform 0.2s;
 }
 
 /* ÍCONES DE SOL E LUA */
 
 .icone-sol,
 .icone-lua {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #FFFFFF;
-    font-size: 15px;
-    line-height: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1;
 }
 
 .icone-sol {
-    right: 7px;
+  right: 7px;
 }
 
 .icone-lua {
-    left: 7px;
+  left: 7px;
 }
 
 /* BOTÃO NO MODO ESCURO */
 
 body.tema-escuro .botao-tema {
-    background-color: #091E26;
+  background-color: #091e26;
 }
 
 body.tema-escuro .circulo-tema {
-    transform: translateX(24px);
+  transform: translateX(24px);
 }
 
 /* NAVEGAÇÃO POR TECLADO */
 
 .botao-tema:focus-visible {
-    outline: 3px solid #72DFF2;
-    outline-offset: 3px;
+  outline: 3px solid #72dff2;
+  outline-offset: 3px;
 }
-
 
 /* HERO */
 
@@ -717,7 +716,7 @@ main section.pagina-simulador {
   margin-bottom: 8px;
 }
 
-.campo-simulador input {
+.campo-simulador input[type="number"] {
   width: 100%;
   padding: 14px;
   border: 1px solid #71858e;
@@ -728,7 +727,7 @@ main section.pagina-simulador {
   font-size: 16px;
 }
 
-.campo-simulador input:focus-visible {
+.campo-simulador input[type="number"]:focus-visible {
   outline: 3px solid #006c68;
   outline-offset: 2px;
 }
@@ -831,28 +830,6 @@ main section.pagina-simulador {
 .opcao-movimento input:focus-visible + span {
   outline: 3px solid #006c68;
   outline-offset: 3px;
-}
-
-/* RESULTADOS */
-
-.simulador-status {
-  background-color: #eaf7f8;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 16px;
-}
-
-.simulador-status span {
-  display: block;
-  color: #536b75;
-  font-size: 12px;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-
-.simulador-status strong {
-  color: #12313b;
-  font-size: 18px;
 }
 
 /* RESULTADOS */
@@ -1243,11 +1220,11 @@ main section.pagina-resultados {
 /* GRÁFICOS */
 
 .resultados-grafico {
-    background-color: #FFFFFF;
-    border: 1px solid #D6E8EB;
-    border-radius: 12px;
-    padding: 24px;
-    margin-top: 24px;
+  background-color: #ffffff;
+  border: 1px solid #d6e8eb;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 24px;
 }
 
 .resultados-grafico h2 {
@@ -1262,11 +1239,11 @@ main section.pagina-resultados {
 }
 
 .resultados-grafico img {
-    display: block;
-    width: 100%;
-    max-width: 760px;
-    height: auto;
-    margin: 0 auto;
+  display: block;
+  width: 100%;
+  max-width: 760px;
+  height: auto;
+  margin: 0 auto;
 }
 
 .resultados-grafico figcaption {
@@ -1277,7 +1254,7 @@ main section.pagina-resultados {
 }
 
 .resultados-grafico figure {
-    margin: 0;
+  margin: 0;
 }
 
 /* CONCLUSÃO */
@@ -1626,8 +1603,8 @@ footer {
 
 body.tema-escuro,
 body.tema-escuro main {
-    background-color: #091E26;
-    color: #F5FBFC;
+  background-color: #091e26;
+  color: #f5fbfc;
 }
 
 /* SEÇÕES COM FUNDO ALTERNADO */
@@ -1635,7 +1612,7 @@ body.tema-escuro main {
 body.tema-escuro .hero,
 body.tema-escuro #solucao,
 body.tema-escuro #comparador {
-    background-color: #0F303B;
+  background-color: #0f303b;
 }
 
 body.tema-escuro #problema,
@@ -1644,7 +1621,7 @@ body.tema-escuro #impacto,
 body.tema-escuro main section.pagina-simulador,
 body.tema-escuro main section.pagina-pontos,
 body.tema-escuro main section.pagina-resultados {
-    background-color: #091E26;
+  background-color: #091e26;
 }
 
 /* TÍTULOS E TEXTOS */
@@ -1652,16 +1629,16 @@ body.tema-escuro main section.pagina-resultados {
 body.tema-escuro main h1,
 body.tema-escuro main h2,
 body.tema-escuro main h3 {
-    color: #F5FBFC;
+  color: #f5fbfc;
 }
 
 body.tema-escuro main p,
 body.tema-escuro main span {
-    color: #C6E0E5;
+  color: #c6e0e5;
 }
 
 body.tema-escuro main strong {
-    color: #F5FBFC;
+  color: #f5fbfc;
 }
 
 /* ETIQUETAS DAS SEÇÕES */
@@ -1675,7 +1652,7 @@ body.tema-escuro .impacto-etiqueta,
 body.tema-escuro .simulador-pagina-etiqueta,
 body.tema-escuro .analise-etiqueta,
 body.tema-escuro .resultados-etiqueta {
-    color: #72DFF2;
+  color: #72dff2;
 }
 
 /* CARTÕES E PAINÉIS */
@@ -1690,8 +1667,8 @@ body.tema-escuro .painel-ponto,
 body.tema-escuro .ranking-pontos,
 body.tema-escuro .resultado-indicador,
 body.tema-escuro .resultados-grafico {
-    background-color: #153744;
-    border-color: #355A66;
+  background-color: #153744;
+  border-color: #355a66;
 }
 
 /* ÁREAS DE DESTAQUE */
@@ -1701,13 +1678,13 @@ body.tema-escuro .ponto-letra,
 body.tema-escuro .simulador-status,
 body.tema-escuro .hero-destaques li,
 body.tema-escuro .resultados-conclusao {
-    background-color: #214754;
-    border-color: #416773;
+  background-color: #214754;
+  border-color: #416773;
 }
 
 body.tema-escuro .hero-destaques li,
 body.tema-escuro .ponto-letra {
-    color: #F5FBFC;
+  color: #f5fbfc;
 }
 
 /* INDICADORES NUMÉRICOS */
@@ -1715,75 +1692,75 @@ body.tema-escuro .ponto-letra {
 body.tema-escuro .impacto-numero,
 body.tema-escuro .resultado-indicador strong,
 body.tema-escuro .indicador-ponto strong {
-    color: #72DFF2;
+  color: #72dff2;
 }
 
 /* BOTÕES PRINCIPAIS */
 
 body.tema-escuro .botao-principal,
 body.tema-escuro .simulador-botao {
-    background-color: #20C7BE;
-    color: #12313B;
+  background-color: #20c7be;
+  color: #12313b;
 }
 
 body.tema-escuro .botao-principal:hover,
 body.tema-escuro .simulador-botao:hover {
-    background-color: #72DFF2;
+  background-color: #72dff2;
 }
 
 /* CAMPOS DO SIMULADOR */
 
 body.tema-escuro .campo-simulador label,
 body.tema-escuro .grupo-movimento legend {
-    color: #F5FBFC;
+  color: #f5fbfc;
 }
 
 body.tema-escuro .campo-simulador input[type="number"] {
-    background-color: #0F303B;
-    color: #FFFFFF;
-    border-color: #71858E;
+  background-color: #0f303b;
+  color: #ffffff;
+  border-color: #71858e;
 }
 
 body.tema-escuro .campo-simulador input::placeholder {
-    color: #C6E0E5;
+  color: #c6e0e5;
 }
 
 /* OPÇÕES SIM E NÃO */
 
 body.tema-escuro .opcao-movimento span {
-    background-color: #153744;
-    color: #FFFFFF;
-    border-color: #71858E;
+  background-color: #153744;
+  color: #ffffff;
+  border-color: #71858e;
 }
 
 body.tema-escuro .opcao-movimento:hover span {
-    background-color: #214754;
+  background-color: #214754;
 }
 
 body.tema-escuro .opcao-movimento input:checked + span,
 body.tema-escuro .opcao-movimento input:checked + span:hover {
-    background-color: #20C7BE;
-    color: #12313B;
-    border-color: #006C68;
+  background-color: #20c7be;
+  color: #12313b;
+  border-color: #006c68;
 }
 
 /* BOTÕES DOS PONTOS */
 
 body.tema-escuro .botao-ponto {
-    background-color: #153744;
-    color: #FFFFFF;
-    border-color: #71858E;
+  background-color: #153744;
+  color: #ffffff;
+  border-color: #71858e;
 }
 
 body.tema-escuro .botao-ponto:hover {
-    background-color: #214754;
+  background-color: #214754;
 }
 
 body.tema-escuro .botao-ponto.ativo,
 body.tema-escuro .botao-ponto.ativo:hover {
-    background-color: #20C7BE;
-    color: #12313B;
-    border-color: #006C68;
+  background-color: #20c7be;
+  color: #12313b;
+  border-color: #006c68;
 }
 
 /* LINHAS DIVISÓRIAS */
@@ -1793,38 +1770,37 @@ body.tema-escuro .simulador-linha,
 body.tema-escuro .ponto-linha,
 body.tema-escuro .ranking-explicacao,
 body.tema-escuro .impacto-indicador .impacto-aviso {
-    border-color: #355A66;
+  border-color: #355a66;
 }
 
 /* BARRAS DO RANKING */
 
 body.tema-escuro .ranking-trilha {
-    background-color: #315561;
+  background-color: #315561;
 }
 
 /* ERROS DO FORMULÁRIO */
 
 body.tema-escuro .campo-simulador input.campo-erro {
-    background-color: #432A30;
-    border-color: #F46B5B;
+  background-color: #432a30;
+  border-color: #f46b5b;
 }
 
 body.tema-escuro .simulador-erro,
 body.tema-escuro .grupo-movimento.campo-erro legend {
-    color: #FFB3B1;
+  color: #ffb3b1;
 }
 
-body.tema-escuro .grupo-movimento.campo-erro
-.opcao-movimento span {
-    border-color: #FFB3B1;
+body.tema-escuro .grupo-movimento.campo-erro .opcao-movimento span {
+  border-color: #ffb3b1;
 }
 
 /* GRÁFICOS DE MATEMÁTICA */
 
 body.tema-escuro .resultados-grafico img {
-    background-color: #FFFFFF;
-    border-radius: 8px;
-    padding: 8px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 8px;
 }
 
 /* ESTADOS DO SIMULADOR NO MODO ESCURO */
@@ -1832,43 +1808,43 @@ body.tema-escuro .resultados-grafico img {
 /* NORMAL */
 
 body.tema-escuro .simulador-status.status-normal {
-    background-color: #173E36;
-    border-left: 4px solid #20C7BE;
+  background-color: #173e36;
+  border-left: 4px solid #20c7be;
 }
 
 body.tema-escuro .simulador-status.status-normal strong {
-    color: #86E0C0;
+  color: #86e0c0;
 }
 
 /* ATENÇÃO */
 
 body.tema-escuro .simulador-status.status-atencao {
-    background-color: #49351D;
-    border-left: 4px solid #FF9B54;
+  background-color: #49351d;
+  border-left: 4px solid #ff9b54;
 }
 
 body.tema-escuro .simulador-status.status-atencao strong {
-    color: #FFD18B;
+  color: #ffd18b;
 }
 
 /* CALOR ELEVADO */
 
 body.tema-escuro .simulador-status.status-calor {
-    background-color: #4B292F;
-    border-left: 4px solid #F46B5B;
+  background-color: #4b292f;
+  border-left: 4px solid #f46b5b;
 }
 
 body.tema-escuro .simulador-status.status-calor strong {
-    color: #FFB3B1;
+  color: #ffb3b1;
 }
 
 /* SEM MOVIMENTO */
 
 body.tema-escuro .simulador-status.status-sem-movimento {
-    background-color: #214754;
-    border-left: 4px solid #72DFF2;
+  background-color: #214754;
+  border-left: 4px solid #72dff2;
 }
 
 body.tema-escuro .simulador-status.status-sem-movimento strong {
-    color: #F5FBFC;
+  color: #f5fbfc;
 }
