@@ -673,6 +673,20 @@ main section.pagina-simulador {
   margin-top: 16px;
 }
 
+/* CAMPOS COM ERRO */
+
+.campo-simulador input[type="number"].campo-erro {
+    border: 2px solid #A92E2C;
+    background-color: #FFF7F6;
+}
+
+.grupo-movimento.campo-erro legend {
+    color: #A92E2C;
+}
+
+.grupo-movimento.campo-erro .opcao-movimento span {
+    border: 2px solid #A92E2C;
+}
 
 /* OPÇÕES DE MOVIMENTO */
 
@@ -764,6 +778,67 @@ main section.pagina-simulador {
 .simulador-status strong {
   color: #12313b;
   font-size: 18px;
+}
+
+
+/* RESULTADOS */
+
+.simulador-status {
+    background-color: #EAF7F8;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+.simulador-status span {
+    display: block;
+    color: #536B75;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.simulador-status strong {
+    color: #12313B;
+    font-size: 18px;
+}
+
+/* ESTADOS VISUAIS DO SIMULADOR */
+
+.simulador-status.status-normal {
+    background-color: #E7F5F2;
+    border-left: 4px solid #006C68;
+}
+
+.simulador-status.status-normal strong {
+    color: #006C68;
+}
+
+.simulador-status.status-atencao {
+    background-color: #FFF1DE;
+    border-left: 4px solid #924300;
+}
+
+.simulador-status.status-atencao strong {
+    color: #924300;
+}
+
+.simulador-status.status-calor {
+    background-color: #FCE9E8;
+    border-left: 4px solid #A92E2C;
+}
+
+.simulador-status.status-calor strong {
+    color: #A92E2C;
+}
+
+.simulador-status.status-sem-movimento {
+    background-color: #EAF7F8;
+    border-left: 4px solid #536B75;
+}
+
+.simulador-status.status-sem-movimento strong {
+    color: #12313B;
 }
 
 .simulador-dado {
