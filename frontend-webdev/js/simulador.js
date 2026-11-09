@@ -45,7 +45,10 @@ function simularFuncionamento() {
 
   // Verifica cada campo separadamente
   const temperaturaInvalida =
-    valorTemperatura.trim() === "" || !Number.isFinite(temperatura);
+    valorTemperatura.trim() === "" ||
+    !Number.isFinite(temperatura) ||
+    temperatura < 0 ||
+    temperatura > 60;
 
   const movimentoInvalido = movimentoSelecionado === null;
 
@@ -64,9 +67,9 @@ function simularFuncionamento() {
     // Define a mensagem conforme o erro
     if (temperaturaInvalida && movimentoInvalido) {
       mensagemErro.textContent =
-        "Informe uma temperatura válida e selecione Sim ou Não.";
+        "Informe uma temperatura entre 0 °C e 60 °C e selecione Sim ou Não.";
     } else if (temperaturaInvalida) {
-      mensagemErro.textContent = "Informe uma temperatura válida.";
+      mensagemErro.textContent = "Informe uma temperatura entre 0 °C e 60 °C.";
     } else {
       mensagemErro.textContent = "Selecione Sim ou Não para o movimento.";
     }
