@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resultados | Ponto Fresco</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container cabecalho">
+        <a href="../index.html" class="marca">
+          <img
+            src="../assets/images/logo-ponto-fresco.png"
+            alt="Símbolo do Ponto Fresco"
+            class="logo"
+          />
+
+          <div class="marca-textos">
+            <strong>Ponto Fresco</strong>
+            <span>ABRIGO INTELIGENTE</span>
+          </div>
+        </a>
+
+        <nav>
+          <ul>
+            <li><a href="../index.html">INÍCIO</a></li>
+            <li><a href="../index.html#problema"> O PROBLEMA </a></li>
+            <li><a href="../index.html#solucao"> A SOLUÇÃO </a></li>
+            <li><a href="simulador.html">SIMULADOR</a></li>
+            <li><a href="pontos.html">PONTOS</a></li>
+            <li><a href="resultados.html">IMPACTO</a></li>
+            <li>
+              <button
+                type="button"
+                id="botao-tema"
+                class="botao-tema"
+                aria-label="Ativar modo escuro"
+                aria-pressed="false"
+              >
+                <span class="icone-sol" aria-hidden="true">☀</span>
+                <span class="icone-lua" aria-hidden="true">☾</span>
+                <span class="circulo-tema" aria-hidden="true"></span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="pagina-resultados">
+        <div class="container">
+          <!-- INTRODUÇÃO -->
+
+          <div class="resultados-introducao">
+            <p class="resultados-etiqueta">RESULTADOS DAS SIMULAÇÕES</p>
+
+            <h1>O que as simulações mostram?</h1>
+
+            <p>
+              A modelagem matemática do Ponto Fresco permitiu analisar
+              diferentes cenários de temperatura e estimar o consumo energético
+              da ventilação.
+            </p>
+          </div>
+
+          <!-- INDICADORES DE ECONOMIA -->
+
+          <div class="resultados-resumo">
+            <article class="resultado-indicador">
+              <span>Dia ameno</span>
+              <strong>84,7%</strong>
+              <p>Economia energética estimada</p>
+            </article>
+
+            <article class="resultado-indicador">
+              <span>Dia quente</span>
+              <strong>51,8%</strong>
+              <p>Economia energética estimada</p>
+            </article>
+
+            <article class="resultado-indicador">
+              <span>Onda de calor</span>
+              <strong>37,2%</strong>
+              <p>Economia energética estimada</p>
+            </article>
+          </div>
+
+          <!-- GRÁFICO DE ENERGIA -->
+
+          <div class="resultados-grafico">
+            <h2>Consumo energético estimado</h2>
+
+            <p>
+              O gráfico compara o consumo da ventilação sob demanda com o
+              funcionamento contínuo nos três cenários simulados.
+            </p>
+
+            <figure>
+              <img
+                src="../assets/images/graficos/4_energia_cenarios.png"
+                alt="Gráfico comparativo do consumo energético da ventilação sob demanda e contínua nos cenários de dia ameno, dia quente e onda de calor."
+              />
+
+              <figcaption>
+                Comparação do consumo diário de energia em Wh, conforme a
+                modelagem matemática do projeto.
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- GRÁFICO DE TEMPERATURA -->
+
+          <div class="resultados-grafico">
+            <h2>Temperatura ao longo do dia</h2>
+
+            <p>
+              A modelagem também permitiu representar a variação da temperatura
+              durante 24 horas em três cenários.
+            </p>
+
+            <figure>
+              <img
+                src="../assets/images/graficos/1_temperatura_cenarios.png"
+                alt="Gráfico da temperatura ao longo de 24 horas nos cenários de dia ameno, dia quente e onda de calor, com limites de 30 e 35 graus Celsius."
+              />
+
+              <figcaption>
+                Os limites de 30 °C e 35 °C representam as faixas experimentais
+                utilizadas pelo Ponto Fresco.
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- RELAÇÃO COM PYTHON -->
+
+          <div class="resultados-conclusao">
+            <h2>E os pontos de ônibus?</h2>
+
+            <p>
+              Além dos cenários matemáticos, utilizamos Python para analisar
+              dados simulados de três pontos de ônibus da Zona Norte do Rio de
+              Janeiro.
+            </p>
+
+            <p>
+              A comparação permite visualizar indicadores de temperatura e um
+              índice experimental de prioridade para melhorias.
+            </p>
+
+            <a href="pontos.html" class="botao-principal">
+              Conhecer os pontos analisados
+            </a>
+          </div>
+
+          <p class="resultados-aviso">
+            Todos os resultados são experimentais e baseados em simulações. Não
+            representam medições ambientais reais nem comprovam redução de
+            temperatura em abrigos físicos.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="rodape-conteudo">
+          <div class="rodape-projeto">
+            <h3>Ponto Fresco</h3>
+            <p>Global Solution | FIAP 2026</p>
+          </div>
+
+          <div class="rodape-integrantes">
+            <h3>DESENVOLVIDO POR</h3>
+
+            <p>
+              Ana Luisa Rodrigues Pimentel
+              <span>RM576025</span>
+            </p>
+
+            <p>
+              Anna Clara Camillo Rodrigues
+              <span>RM575371</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="rodape-final">
+          <p>Projeto acadêmico com dados simulados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/tema.js"></script>
+  </body>
+</html>

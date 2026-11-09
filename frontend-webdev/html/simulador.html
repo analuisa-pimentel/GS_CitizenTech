@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador | Ponto Fresco</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container cabecalho">
+        <a href="../index.html" class="marca">
+          <img
+            src="../assets/images/logo-ponto-fresco.png"
+            alt="Símbolo do Ponto Fresco"
+            class="logo"
+          />
+
+          <div class="marca-textos">
+            <strong>Ponto Fresco</strong>
+            <span>ABRIGO INTELIGENTE</span>
+          </div>
+        </a>
+
+        <nav>
+          <ul>
+            <li><a href="../index.html">INÍCIO</a></li>
+            <li><a href="../index.html#problema"> O PROBLEMA </a></li>
+            <li><a href="../index.html#solucao"> A SOLUÇÃO </a></li>
+            <li><a href="simulador.html">SIMULADOR</a></li>
+            <li><a href="pontos.html">PONTOS</a></li>
+            <li><a href="resultados.html">IMPACTO</a></li>
+            <li>
+              <button
+                type="button"
+                id="botao-tema"
+                class="botao-tema"
+                aria-label="Ativar modo escuro"
+                aria-pressed="false"
+              >
+                <span class="icone-sol" aria-hidden="true">☀</span>
+                <span class="icone-lua" aria-hidden="true">☾</span>
+                <span class="circulo-tema" aria-hidden="true"></span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="pagina-simulador">
+        <div class="container">
+          <div class="simulador-introducao">
+            <p class="simulador-pagina-etiqueta">SIMULADOR INTERATIVO</p>
+
+            <h1>Teste o funcionamento do abrigo.</h1>
+
+            <p>
+              Informe a temperatura e se há movimento no abrigo para descobrir
+              como o sistema de ventilação responderia.
+            </p>
+          </div>
+
+          <div class="simulador-layout">
+            <!-- FORMULÁRIO -->
+
+            <div class="simulador-painel">
+              <h2>Condições do ambiente</h2>
+
+              <form id="form-simulador" novalidate>
+                <div class="campo-simulador">
+                  <label for="temperatura"> Temperatura (°C) </label>
+
+                  <input
+                    type="number"
+                    id="temperatura"
+                    name="temperatura"
+                    min="0"
+                    max="60"
+                    step="0.1"
+                    placeholder="Ex.: 33"
+                    required
+                  />
+                </div>
+
+                <div class="campo-simulador">
+                  <fieldset class="grupo-movimento">
+                    <legend>Movimento detectado?</legend>
+
+                    <div class="opcoes-movimento">
+                      <label class="opcao-movimento">
+                        <input
+                          type="radio"
+                          name="movimento"
+                          value="sim"
+                          required
+                        />
+                        <span>Sim</span>
+                      </label>
+
+                      <label class="opcao-movimento">
+                        <input
+                          type="radio"
+                          name="movimento"
+                          value="nao"
+                          required
+                        />
+                        <span>Não</span>
+                      </label>
+                    </div>
+                  </fieldset>
+                </div>
+
+                <button
+                  type="button"
+                  id="botao-simular"
+                  class="botao-principal simulador-botao"
+                >
+                  Simular funcionamento
+                </button>
+
+                <p id="mensagem-erro" class="simulador-erro" role="alert"></p>
+              </form>
+            </div>
+
+            <!-- RESULTADO -->
+
+            <div class="simulador-painel">
+              <h2>Resultado da simulação</h2>
+
+              <div
+                class="simulador-status"
+                id="resultado-simulacao"
+                aria-live="polite"
+              >
+                <span>STATUS DO SISTEMA</span>
+
+                <strong id="status-sistema"> Aguardando simulação </strong>
+              </div>
+
+              <div class="simulador-dado">
+                <span>Temperatura</span>
+                <strong id="resultado-temperatura">—</strong>
+              </div>
+
+              <div class="simulador-dado">
+                <span>Condição térmica</span>
+                <strong id="resultado-condicao">—</strong>
+              </div>
+
+              <div class="simulador-dado">
+                <span>Movimento</span>
+                <strong id="resultado-movimento">—</strong>
+              </div>
+
+              <div class="simulador-dado">
+                <span>Ventilação</span>
+                <strong id="resultado-ventilacao">—</strong>
+              </div>
+            </div>
+          </div>
+
+          <p class="simulador-observacao">
+            Simulação acadêmica baseada nas regras experimentais do Ponto
+            Fresco. Os dados não são coletados em tempo real.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="rodape-conteudo">
+          <div class="rodape-projeto">
+            <h3>Ponto Fresco</h3>
+            <p>Global Solution | FIAP 2026</p>
+          </div>
+
+          <div class="rodape-integrantes">
+            <h3>DESENVOLVIDO POR</h3>
+
+            <p>
+              Ana Luisa Rodrigues Pimentel
+              <span>RM576025</span>
+            </p>
+
+            <p>
+              Anna Clara Camillo Rodrigues
+              <span>RM575371</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="rodape-final">
+          <p>Projeto acadêmico com dados simulados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/simulador.js"></script>
+    <script src="../js/tema.js"></script>
+  </body>
+</html>

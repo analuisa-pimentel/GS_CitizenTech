@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pontos analisados | Ponto Fresco</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container cabecalho">
+        <a href="../index.html" class="marca">
+          <img
+            src="../assets/images/logo-ponto-fresco.png"
+            alt="Símbolo do Ponto Fresco"
+            class="logo"
+          />
+
+          <div class="marca-textos">
+            <strong>Ponto Fresco</strong>
+            <span>ABRIGO INTELIGENTE</span>
+          </div>
+        </a>
+
+        <nav>
+          <ul>
+            <li><a href="../index.html">INÍCIO</a></li>
+            <li><a href="../index.html#problema"> O PROBLEMA </a></li>
+            <li><a href="../index.html#solucao"> A SOLUÇÃO </a></li>
+            <li><a href="simulador.html">SIMULADOR</a></li>
+            <li><a href="pontos.html">PONTOS</a></li>
+            <li><a href="resultados.html">IMPACTO</a></li>
+            <li>
+              <button
+                type="button"
+                id="botao-tema"
+                class="botao-tema"
+                aria-label="Ativar modo escuro"
+                aria-pressed="false"
+              >
+                <span class="icone-sol" aria-hidden="true">☀</span>
+                <span class="icone-lua" aria-hidden="true">☾</span>
+                <span class="circulo-tema" aria-hidden="true"></span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="pagina-pontos">
+        <div class="container">
+          <!-- INTRODUÇÃO -->
+
+          <div class="analise-introducao">
+            <p class="analise-etiqueta">ANÁLISE COM DADOS SIMULADOS</p>
+
+            <h1>Conheça os pontos analisados.</h1>
+
+            <p>
+              Explore os resultados experimentais de três pontos de ônibus
+              utilizados como referência na Zona Norte do Rio de Janeiro.
+            </p>
+          </div>
+
+          <!-- SELEÇÃO DOS PONTOS -->
+
+          <div class="seletor-pontos">
+            <h2>Selecione um ponto</h2>
+
+            <div
+              class="botoes-pontos"
+              role="group"
+              aria-label="Selecionar ponto de ônibus"
+            >
+              <button
+                type="button"
+                class="botao-ponto ativo"
+                value="A"
+                aria-pressed="true"
+              >
+                Ponto A
+              </button>
+
+              <button
+                type="button"
+                class="botao-ponto"
+                value="B"
+                aria-pressed="false"
+              >
+                Ponto B
+              </button>
+
+              <button
+                type="button"
+                class="botao-ponto"
+                value="C"
+                aria-pressed="false"
+              >
+                Ponto C
+              </button>
+            </div>
+          </div>
+
+          <!-- RESULTADOS DO PONTO -->
+
+          <article class="painel-ponto">
+            <div class="painel-ponto-cabecalho">
+              <h2 id="ponto-nome">Ponto A</h2>
+
+              <p id="ponto-endereco">Av. Pastor Martin Luther King, 98</p>
+
+              <p id="ponto-cobertura">Cenário: sem cobertura</p>
+            </div>
+
+            <div class="indicadores-ponto">
+              <div class="indicador-ponto">
+                <span>Temperatura média</span>
+                <strong id="ponto-media"> 35,5 °C </strong>
+              </div>
+
+              <div class="indicador-ponto">
+                <span>Temperatura máxima</span>
+                <strong id="ponto-maxima"> 37,1 °C </strong>
+              </div>
+
+              <div class="indicador-ponto">
+                <span>Leituras em alerta</span>
+                <strong id="ponto-alertas"> 100% </strong>
+              </div>
+
+              <div class="indicador-ponto">
+                <span>Índice de prioridade</span>
+                <strong id="ponto-prioridade"> 180 </strong>
+              </div>
+            </div>
+
+            <p class="ponto-observacao" id="ponto-observacao">
+              No cenário do Ponto A, todas as seis leituras válidas ficaram nas
+              faixas de atenção ou calor elevado.
+            </p>
+          </article>
+
+          <!-- RANKING DE PRIORIDADE -->
+
+          <div class="ranking-pontos">
+            <div class="ranking-introducao">
+              <h2>Ranking de prioridade</h2>
+
+              <p>
+                Compare a prioridade experimental dos três pontos, considerando
+                os dados simulados e as condições de infraestrutura.
+              </p>
+            </div>
+
+            <ol class="ranking-lista">
+              <li class="ranking-item">
+                <div class="ranking-topo">
+                  <div>
+                    <strong>1º — Ponto A</strong>
+                    <span>Sem cobertura</span>
+                  </div>
+
+                  <strong>180</strong>
+                </div>
+
+                <div class="ranking-trilha">
+                  <div class="ranking-barra ranking-a"></div>
+                </div>
+              </li>
+
+              <li class="ranking-item">
+                <div class="ranking-topo">
+                  <div>
+                    <strong>2º — Ponto B</strong>
+                    <span>Cobertura parcial</span>
+                  </div>
+
+                  <strong>90</strong>
+                </div>
+
+                <div class="ranking-trilha">
+                  <div class="ranking-barra ranking-b"></div>
+                </div>
+              </li>
+
+              <li class="ranking-item">
+                <div class="ranking-topo">
+                  <div>
+                    <strong>3º — Ponto C</strong>
+                    <span>Protegido e sombreado</span>
+                  </div>
+
+                  <strong>30</strong>
+                </div>
+
+                <div class="ranking-trilha">
+                  <div class="ranking-barra ranking-c"></div>
+                </div>
+              </li>
+            </ol>
+
+            <p class="ranking-explicacao">
+              O índice considera os minutos estimados de calor elevado com
+              movimento detectado, multiplicados por um fator associado à
+              infraestrutura do ponto. Quanto maior o índice, maior a prioridade
+              relativa no cenário simulado.
+            </p>
+          </div>
+
+          <p class="analise-aviso">
+            Dados simulados entre 11h e 13h30, em intervalos de 30 minutos. Os
+            endereços são referências territoriais, não locais com medições
+            realizadas.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="rodape-conteudo">
+          <div class="rodape-projeto">
+            <h3>Ponto Fresco</h3>
+            <p>Global Solution | FIAP 2026</p>
+          </div>
+
+          <div class="rodape-integrantes">
+            <h3>DESENVOLVIDO POR</h3>
+
+            <p>
+              Ana Luisa Rodrigues Pimentel
+              <span>RM576025</span>
+            </p>
+
+            <p>
+              Anna Clara Camillo Rodrigues
+              <span>RM575371</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="rodape-final">
+          <p>Projeto acadêmico com dados simulados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/pontos.js"></script>
+    <script src="../js/tema.js"></script>
+  </body>
+</html>

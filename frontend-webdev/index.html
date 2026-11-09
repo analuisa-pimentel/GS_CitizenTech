@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ponto Fresco | Abrigo Inteligente</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container cabecalho">
+        <a href="index.html" class="marca">
+          <img
+            src="assets/images/logo-ponto-fresco.png"
+            alt="Símbolo do Ponto Fresco"
+            class="logo"
+          />
+
+          <div class="marca-textos">
+            <strong>Ponto Fresco</strong>
+            <span>ABRIGO INTELIGENTE</span>
+          </div>
+        </a>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="#problema">O PROBLEMA</a></li>
+            <li><a href="#solucao">A SOLUÇÃO</a></li>
+            <li><a href="html/simulador.html">SIMULADOR</a></li>
+            <li><a href="html/pontos.html">PONTOS</a></li>
+            <li><a href="html/resultados.html">IMPACTO</a></li>
+            <li>
+              <button
+                type="button"
+                id="botao-tema"
+                class="botao-tema"
+                aria-label="Ativar modo escuro"
+                aria-pressed="false"
+              >
+                <span class="icone-sol" aria-hidden="true">☀</span>
+                <span class="icone-lua" aria-hidden="true">☾</span>
+                <span class="circulo-tema" aria-hidden="true"></span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-conteudo">
+          <div class="hero-texto">
+            <p class="hero-etiqueta">TECNOLOGIA PARA MOBILIDADE URBANA</p>
+
+            <h1>Uma espera mais protegida do calor.</h1>
+
+            <p class="hero-descricao">
+              Conheça o Ponto Fresco, uma proposta de abrigo inteligente com
+              sombra, sensores e ventilação automática sob demanda.
+            </p>
+
+            <a href="#solucao" class="botao-principal"> Conheça a solução </a>
+          </div>
+
+          <figure class="hero-visual">
+            <img
+              src="assets/images/abrigo-ponto-fresco.png"
+              alt="Representação conceitual do abrigo inteligente Ponto Fresco"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section id="problema" class="problema">
+        <div class="container problema-conteudo">
+          <div class="problema-texto">
+            <p class="problema-etiqueta">O PROBLEMA | ZONA NORTE DO RIO</p>
+
+            <h2>O calor também faz parte da espera.</h2>
+
+            <p>
+              Na Zona Norte do Rio de Janeiro, o calor intenso pode tornar a
+              espera pelo ônibus ainda mais desconfortável, especialmente em
+              pontos com pouca ou nenhuma proteção contra o sol.
+            </p>
+
+            <p>
+              Para compreender melhor essa realidade, selecionamos três pontos
+              de ônibus em Del Castilho e nas proximidades como referência para
+              nossas análises.
+            </p>
+
+            <p>
+              Foi pensando nesse cenário que surgiu o Ponto Fresco: uma proposta
+              para oferecer mais proteção durante a espera e utilizar a
+              tecnologia para tornar esses espaços mais preparados para o calor.
+            </p>
+          </div>
+
+          <div class="problema-cards">
+            <article class="problema-card">
+              <span>01</span>
+              <h3>Exposição ao sol</h3>
+              <p>
+                Em paradas sem cobertura adequada, os passageiros podem ficar
+                expostos ao sol enquanto aguardam o ônibus.
+              </p>
+            </article>
+
+            <article class="problema-card">
+              <span>02</span>
+              <h3>Proteção desigual</h3>
+              <p>
+                As condições de sombra e estrutura variam entre os pontos,
+                oferecendo diferentes níveis de proteção.
+              </p>
+            </article>
+
+            <article class="problema-card">
+              <span>03</span>
+              <h3>Conforto durante a espera</h3>
+              <p>
+                Uma infraestrutura com sombra e recursos adaptados ao calor pode
+                contribuir para uma experiência de espera mais confortável.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="solucao" class="solucao">
+        <div class="container">
+          <div class="solucao-introducao">
+            <p class="solucao-etiqueta">COMO FUNCIONA</p>
+
+            <h2>Tecnologia para uma espera mais protegida.</h2>
+
+            <p>
+              O Ponto Fresco combina proteção solar, sensores e ventilação
+              automatizada. A proposta é oferecer melhores condições durante a
+              espera, utilizando a tecnologia de forma simples e eficiente.
+            </p>
+          </div>
+
+          <div class="solucao-etapas">
+            <article class="solucao-card">
+              <span>01</span>
+              <h3>Proteção solar</h3>
+              <p>
+                A cobertura oferece sombra, reduzindo a exposição direta dos
+                passageiros ao sol.
+              </p>
+            </article>
+
+            <article class="solucao-card">
+              <span>02</span>
+              <h3>Sensores</h3>
+              <p>
+                Sensores identificam a temperatura, a umidade e a movimentação
+                de pessoas no abrigo.
+              </p>
+            </article>
+
+            <article class="solucao-card">
+              <span>03</span>
+              <h3>Decisão automática</h3>
+              <p>
+                O sistema avalia as informações dos sensores para definir o
+                funcionamento da ventilação.
+              </p>
+            </article>
+
+            <article class="solucao-card">
+              <span>04</span>
+              <h3>Ventilação</h3>
+              <p>
+                Quando há calor e movimento, a ventilação pode ser acionada
+                conforme a temperatura.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="simulador" class="chamada-simulador">
+        <div class="container simulador-conteudo">
+          <div class="simulador-texto">
+            <p class="simulador-etiqueta">TESTE A TECNOLOGIA</p>
+
+            <h2>Veja como o Ponto Fresco reage ao calor.</h2>
+
+            <p class="simulador-descricao">
+              Descubra como o abrigo inteligente funcionaria em diferentes
+              condições. Escolha a temperatura, informe se há movimento e veja
+              como a ventilação responde a cada situação.
+            </p>
+
+            <a href="html/simulador.html" class="botao-principal">
+              Testar simulador
+            </a>
+          </div>
+
+          <div class="simulador-previa">
+            <p class="simulador-previa-titulo">EXEMPLO DE SIMULAÇÃO</p>
+
+            <div class="simulador-linha">
+              <span>Temperatura</span>
+              <strong>35 °C</strong>
+            </div>
+
+            <div class="simulador-linha">
+              <span>Movimento</span>
+              <strong>Detectado</strong>
+            </div>
+
+            <div class="simulador-linha">
+              <span>Ventilação</span>
+              <strong>Modo 2</strong>
+            </div>
+
+            <p class="simulador-aviso">
+              Exemplo ilustrativo com dados simulados.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="comparador" class="chamada-pontos">
+        <div class="container pontos-conteudo">
+          <div class="pontos-texto">
+            <p class="pontos-etiqueta">ANÁLISE DE PONTOS DE ÔNIBUS</p>
+
+            <h2>Três pontos, diferentes necessidades.</h2>
+
+            <p class="pontos-descricao">
+              Utilizamos três pontos de ônibus em Del Castilho e nas
+              proximidades como referência para comparar cenários de calor e
+              infraestrutura.
+            </p>
+
+            <p class="pontos-descricao">
+              Os dados simulados permitem demonstrar como a tecnologia pode
+              ajudar a identificar locais que precisam de maior atenção.
+            </p>
+
+            <a href="html/pontos.html" class="botao-principal">
+              Conhecer os pontos
+            </a>
+          </div>
+
+          <div class="pontos-previa">
+            <p class="pontos-previa-titulo">CENÁRIOS DE INFRAESTRUTURA</p>
+
+            <div class="ponto-linha">
+              <span class="ponto-letra">A</span>
+
+              <div class="ponto-detalhe">
+                <strong>Ponto A</strong>
+                <span>Sem cobertura</span>
+              </div>
+            </div>
+
+            <div class="ponto-linha">
+              <span class="ponto-letra">B</span>
+
+              <div class="ponto-detalhe">
+                <strong>Ponto B</strong>
+                <span>Cobertura parcial</span>
+              </div>
+            </div>
+
+            <div class="ponto-linha">
+              <span class="ponto-letra">C</span>
+
+              <div class="ponto-detalhe">
+                <strong>Ponto C</strong>
+                <span>Protegido e sombreado</span>
+              </div>
+            </div>
+
+            <p class="pontos-aviso">
+              Cenários de infraestrutura utilizados na comparação experimental.
+              Não representam medições ambientais reais.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="impacto" class="chamada-impacto">
+        <div class="container impacto-conteudo">
+          <div class="impacto-texto">
+            <p class="impacto-etiqueta">IMPACTO E RESULTADOS</p>
+
+            <h2>Tecnologia que também pensa no consumo de energia.</h2>
+
+            <p class="impacto-descricao">
+              Além de oferecer mais proteção durante a espera, o Ponto Fresco
+              busca utilizar a ventilação de forma eficiente, acionando-a
+              conforme a necessidade.
+            </p>
+
+            <p class="impacto-descricao">
+              Nossas simulações permitem comparar diferentes cenários e estimar
+              o consumo energético do sistema.
+            </p>
+
+            <a href="html/resultados.html" class="botao-principal">
+              Ver resultados
+            </a>
+          </div>
+
+          <div class="impacto-indicador">
+            <p class="impacto-indicador-titulo">ECONOMIA ENERGÉTICA ESTIMADA</p>
+
+            <strong class="impacto-numero"> 37,2% </strong>
+
+            <h3>Cenário de onda de calor</h3>
+
+            <p>
+              Comparação entre ventilação sob demanda e funcionamento contínuo,
+              conforme a modelagem matemática.
+            </p>
+
+            <p class="impacto-aviso">
+              Resultado experimental baseado em simulação, não em medições
+              reais.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="rodape-conteudo">
+          <div class="rodape-projeto">
+            <h3>Ponto Fresco</h3>
+            <p>Global Solution | FIAP 2026</p>
+          </div>
+
+          <div class="rodape-integrantes">
+            <h3>DESENVOLVIDO POR</h3>
+
+            <p>
+              Ana Luisa Rodrigues Pimentel
+              <span>RM576025</span>
+            </p>
+
+            <p>
+              Anna Clara Camillo Rodrigues
+              <span>RM575371</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="rodape-final">
+          <p>Projeto acadêmico com dados simulados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/tema.js"></script>
+  </body>
+</html>
