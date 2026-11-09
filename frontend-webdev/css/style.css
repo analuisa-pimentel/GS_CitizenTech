@@ -81,16 +81,25 @@ header {
 }
 
 nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
 }
 
 nav a {
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 500;
+    display: flex;
+    align-items: center;
+    min-height: 30px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 nav a:hover {
@@ -105,6 +114,72 @@ a:focus-visible {
 header a:focus-visible {
   outline-color: #72dff2;
 }
+
+/* BOTÃO CLARO E ESCURO */
+
+.botao-tema {
+    position: relative;
+    display: block;
+    width: 54px;
+    height: 30px;
+    padding: 0;
+    border: 1px solid #71858E;
+    border-radius: 30px;
+    background-color: #536B75;
+    cursor: pointer;
+}
+
+/* CÍRCULO DO SELETOR */
+
+.circulo-tema {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 22px;
+    height: 22px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    z-index: 1;
+    transition: transform 0.2s;
+}
+
+/* ÍCONES DE SOL E LUA */
+
+.icone-sol,
+.icone-lua {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FFFFFF;
+    font-size: 15px;
+    line-height: 1;
+}
+
+.icone-sol {
+    right: 7px;
+}
+
+.icone-lua {
+    left: 7px;
+}
+
+/* BOTÃO NO MODO ESCURO */
+
+body.tema-escuro .botao-tema {
+    background-color: #091E26;
+}
+
+body.tema-escuro .circulo-tema {
+    transform: translateX(24px);
+}
+
+/* NAVEGAÇÃO POR TECLADO */
+
+.botao-tema:focus-visible {
+    outline: 3px solid #72DFF2;
+    outline-offset: 3px;
+}
+
 
 /* HERO */
 
@@ -1311,6 +1386,7 @@ footer {
   }
 
   nav ul {
+    align-items: center;
     gap: 12px 20px;
   }
 
@@ -1540,4 +1616,259 @@ footer {
   .resultados-conclusao {
     padding: 24px;
   }
+}
+
+/* =====================================
+   MODO ESCURO - PONTO FRESCO
+===================================== */
+
+/* FUNDOS PRINCIPAIS */
+
+body.tema-escuro,
+body.tema-escuro main {
+    background-color: #091E26;
+    color: #F5FBFC;
+}
+
+/* SEÇÕES COM FUNDO ALTERNADO */
+
+body.tema-escuro .hero,
+body.tema-escuro #solucao,
+body.tema-escuro #comparador {
+    background-color: #0F303B;
+}
+
+body.tema-escuro #problema,
+body.tema-escuro #simulador,
+body.tema-escuro #impacto,
+body.tema-escuro main section.pagina-simulador,
+body.tema-escuro main section.pagina-pontos,
+body.tema-escuro main section.pagina-resultados {
+    background-color: #091E26;
+}
+
+/* TÍTULOS E TEXTOS */
+
+body.tema-escuro main h1,
+body.tema-escuro main h2,
+body.tema-escuro main h3 {
+    color: #F5FBFC;
+}
+
+body.tema-escuro main p,
+body.tema-escuro main span {
+    color: #C6E0E5;
+}
+
+body.tema-escuro main strong {
+    color: #F5FBFC;
+}
+
+/* ETIQUETAS DAS SEÇÕES */
+
+body.tema-escuro .hero-etiqueta,
+body.tema-escuro .problema-etiqueta,
+body.tema-escuro .solucao-etiqueta,
+body.tema-escuro .simulador-etiqueta,
+body.tema-escuro .pontos-etiqueta,
+body.tema-escuro .impacto-etiqueta,
+body.tema-escuro .simulador-pagina-etiqueta,
+body.tema-escuro .analise-etiqueta,
+body.tema-escuro .resultados-etiqueta {
+    color: #72DFF2;
+}
+
+/* CARTÕES E PAINÉIS */
+
+body.tema-escuro .problema-card,
+body.tema-escuro .solucao-card,
+body.tema-escuro .simulador-previa,
+body.tema-escuro .pontos-previa,
+body.tema-escuro .impacto-indicador,
+body.tema-escuro .simulador-painel,
+body.tema-escuro .painel-ponto,
+body.tema-escuro .ranking-pontos,
+body.tema-escuro .resultado-indicador,
+body.tema-escuro .resultados-grafico {
+    background-color: #153744;
+    border-color: #355A66;
+}
+
+/* ÁREAS DE DESTAQUE */
+
+body.tema-escuro .indicador-ponto,
+body.tema-escuro .ponto-letra,
+body.tema-escuro .simulador-status,
+body.tema-escuro .hero-destaques li,
+body.tema-escuro .resultados-conclusao {
+    background-color: #214754;
+    border-color: #416773;
+}
+
+body.tema-escuro .hero-destaques li,
+body.tema-escuro .ponto-letra {
+    color: #F5FBFC;
+}
+
+/* INDICADORES NUMÉRICOS */
+
+body.tema-escuro .impacto-numero,
+body.tema-escuro .resultado-indicador strong,
+body.tema-escuro .indicador-ponto strong {
+    color: #72DFF2;
+}
+
+/* BOTÕES PRINCIPAIS */
+
+body.tema-escuro .botao-principal,
+body.tema-escuro .simulador-botao {
+    background-color: #20C7BE;
+    color: #12313B;
+}
+
+body.tema-escuro .botao-principal:hover,
+body.tema-escuro .simulador-botao:hover {
+    background-color: #72DFF2;
+}
+
+/* CAMPOS DO SIMULADOR */
+
+body.tema-escuro .campo-simulador label,
+body.tema-escuro .grupo-movimento legend {
+    color: #F5FBFC;
+}
+
+body.tema-escuro .campo-simulador input[type="number"] {
+    background-color: #0F303B;
+    color: #FFFFFF;
+    border-color: #71858E;
+}
+
+body.tema-escuro .campo-simulador input::placeholder {
+    color: #C6E0E5;
+}
+
+/* OPÇÕES SIM E NÃO */
+
+body.tema-escuro .opcao-movimento span {
+    background-color: #153744;
+    color: #FFFFFF;
+    border-color: #71858E;
+}
+
+body.tema-escuro .opcao-movimento:hover span {
+    background-color: #214754;
+}
+
+body.tema-escuro .opcao-movimento input:checked + span,
+body.tema-escuro .opcao-movimento input:checked + span:hover {
+    background-color: #20C7BE;
+    color: #12313B;
+    border-color: #006C68;
+}
+
+/* BOTÕES DOS PONTOS */
+
+body.tema-escuro .botao-ponto {
+    background-color: #153744;
+    color: #FFFFFF;
+    border-color: #71858E;
+}
+
+body.tema-escuro .botao-ponto:hover {
+    background-color: #214754;
+}
+
+body.tema-escuro .botao-ponto.ativo,
+body.tema-escuro .botao-ponto.ativo:hover {
+    background-color: #20C7BE;
+    color: #12313B;
+    border-color: #006C68;
+}
+
+/* LINHAS DIVISÓRIAS */
+
+body.tema-escuro .simulador-dado,
+body.tema-escuro .simulador-linha,
+body.tema-escuro .ponto-linha,
+body.tema-escuro .ranking-explicacao,
+body.tema-escuro .impacto-indicador .impacto-aviso {
+    border-color: #355A66;
+}
+
+/* BARRAS DO RANKING */
+
+body.tema-escuro .ranking-trilha {
+    background-color: #315561;
+}
+
+/* ERROS DO FORMULÁRIO */
+
+body.tema-escuro .campo-simulador input.campo-erro {
+    background-color: #432A30;
+    border-color: #F46B5B;
+}
+
+body.tema-escuro .simulador-erro,
+body.tema-escuro .grupo-movimento.campo-erro legend {
+    color: #FFB3B1;
+}
+
+body.tema-escuro .grupo-movimento.campo-erro
+.opcao-movimento span {
+    border-color: #FFB3B1;
+}
+
+/* GRÁFICOS DE MATEMÁTICA */
+
+body.tema-escuro .resultados-grafico img {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+/* ESTADOS DO SIMULADOR NO MODO ESCURO */
+
+/* NORMAL */
+
+body.tema-escuro .simulador-status.status-normal {
+    background-color: #173E36;
+    border-left: 4px solid #20C7BE;
+}
+
+body.tema-escuro .simulador-status.status-normal strong {
+    color: #86E0C0;
+}
+
+/* ATENÇÃO */
+
+body.tema-escuro .simulador-status.status-atencao {
+    background-color: #49351D;
+    border-left: 4px solid #FF9B54;
+}
+
+body.tema-escuro .simulador-status.status-atencao strong {
+    color: #FFD18B;
+}
+
+/* CALOR ELEVADO */
+
+body.tema-escuro .simulador-status.status-calor {
+    background-color: #4B292F;
+    border-left: 4px solid #F46B5B;
+}
+
+body.tema-escuro .simulador-status.status-calor strong {
+    color: #FFB3B1;
+}
+
+/* SEM MOVIMENTO */
+
+body.tema-escuro .simulador-status.status-sem-movimento {
+    background-color: #214754;
+    border-left: 4px solid #72DFF2;
+}
+
+body.tema-escuro .simulador-status.status-sem-movimento strong {
+    color: #F5FBFC;
 }
