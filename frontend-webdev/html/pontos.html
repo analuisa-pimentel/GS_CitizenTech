@@ -43,23 +43,171 @@
     </header>
 
     <main>
-      <section>
+      <section class="pagina-pontos">
         <div class="container">
-          <h1>Pontos de ônibus analisados</h1>
+          <!-- INTRODUÇÃO -->
 
-          <p>
-            Nesta página você poderá consultar os resultados simulados de três
-            pontos de ônibus utilizados como referência para o projeto.
+          <div class="analise-introducao">
+            <p class="analise-etiqueta">ANÁLISE COM DADOS SIMULADOS</p>
+
+            <h1>Conheça os pontos analisados.</h1>
+
+            <p>
+              Explore os resultados experimentais de três pontos de ônibus
+              utilizados como referência na Zona Norte do Rio de Janeiro.
+            </p>
+          </div>
+
+          <!-- SELEÇÃO DOS PONTOS -->
+
+          <div class="seletor-pontos">
+            <h2>Selecione um ponto</h2>
+
+            <div
+              class="botoes-pontos"
+              role="group"
+              aria-label="Selecionar ponto de ônibus"
+            >
+              <button
+                type="button"
+                class="botao-ponto ativo"
+                value="A"
+                aria-pressed="true"
+              >
+                Ponto A
+              </button>
+
+              <button
+                type="button"
+                class="botao-ponto"
+                value="B"
+                aria-pressed="false"
+              >
+                Ponto B
+              </button>
+
+              <button
+                type="button"
+                class="botao-ponto"
+                value="C"
+                aria-pressed="false"
+              >
+                Ponto C
+              </button>
+            </div>
+          </div>
+
+          <!-- RESULTADOS DO PONTO -->
+
+          <article class="painel-ponto">
+            <div class="painel-ponto-cabecalho">
+              <h2 id="ponto-nome">Ponto A</h2>
+
+              <p id="ponto-endereco">Av. Pastor Martin Luther King, 98</p>
+
+              <p id="ponto-cobertura">Cenário: sem cobertura</p>
+            </div>
+
+            <div class="indicadores-ponto">
+              <div class="indicador-ponto">
+                <span>Temperatura média</span>
+                <strong id="ponto-media"> 35,5 °C </strong>
+              </div>
+
+              <div class="indicador-ponto">
+                <span>Temperatura máxima</span>
+                <strong id="ponto-maxima"> 37,1 °C </strong>
+              </div>
+
+              <div class="indicador-ponto">
+                <span>Leituras em alerta</span>
+                <strong id="ponto-alertas"> 100% </strong>
+              </div>
+
+              <div class="indicador-ponto">
+                <span>Índice de prioridade</span>
+                <strong id="ponto-prioridade"> 180 </strong>
+              </div>
+            </div>
+
+            <p class="ponto-observacao" id="ponto-observacao">
+              No cenário do Ponto A, todas as seis leituras válidas ficaram nas
+              faixas de atenção ou calor elevado.
+            </p>
+          </article>
+
+          <!-- RANKING DE PRIORIDADE -->
+
+          <div class="ranking-pontos">
+            <div class="ranking-introducao">
+              <h2>Ranking de prioridade</h2>
+
+              <p>
+                Compare a prioridade experimental dos três pontos, considerando
+                os dados simulados e as condições de infraestrutura.
+              </p>
+            </div>
+
+            <ol class="ranking-lista">
+              <li class="ranking-item">
+                <div class="ranking-topo">
+                  <div>
+                    <strong>1º — Ponto A</strong>
+                    <span>Sem cobertura</span>
+                  </div>
+
+                  <strong>180</strong>
+                </div>
+
+                <div class="ranking-trilha">
+                  <div class="ranking-barra ranking-a"></div>
+                </div>
+              </li>
+
+              <li class="ranking-item">
+                <div class="ranking-topo">
+                  <div>
+                    <strong>2º — Ponto B</strong>
+                    <span>Cobertura parcial</span>
+                  </div>
+
+                  <strong>90</strong>
+                </div>
+
+                <div class="ranking-trilha">
+                  <div class="ranking-barra ranking-b"></div>
+                </div>
+              </li>
+
+              <li class="ranking-item">
+                <div class="ranking-topo">
+                  <div>
+                    <strong>3º — Ponto C</strong>
+                    <span>Protegido e sombreado</span>
+                  </div>
+
+                  <strong>30</strong>
+                </div>
+
+                <div class="ranking-trilha">
+                  <div class="ranking-barra ranking-c"></div>
+                </div>
+              </li>
+            </ol>
+
+            <p class="ranking-explicacao">
+              O índice considera os minutos estimados de calor elevado com
+              movimento detectado, multiplicados por um fator associado à
+              infraestrutura do ponto. Quanto maior o índice, maior a prioridade
+              relativa no cenário simulado.
+            </p>
+          </div>
+
+          <p class="analise-aviso">
+            Dados simulados entre 11h e 13h30, em intervalos de 30 minutos. Os
+            endereços são referências territoriais, não locais com medições
+            realizadas.
           </p>
-
-          <p>
-            Será possível comparar os indicadores de temperatura, as condições
-            de infraestrutura e a prioridade experimental de cada ponto.
-          </p>
-
-          <a href="../index.html" class="botao-principal">
-            Voltar à página inicial
-          </a>
         </div>
       </section>
     </main>
@@ -92,5 +240,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="../js/pontos.js"></script>
   </body>
 </html>

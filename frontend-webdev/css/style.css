@@ -676,86 +676,86 @@ main section.pagina-simulador {
 /* CAMPOS COM ERRO */
 
 .campo-simulador input[type="number"].campo-erro {
-    border: 2px solid #A92E2C;
-    background-color: #FFF7F6;
+  border: 2px solid #a92e2c;
+  background-color: #fff7f6;
 }
 
 .grupo-movimento.campo-erro legend {
-    color: #A92E2C;
+  color: #a92e2c;
 }
 
 .grupo-movimento.campo-erro .opcao-movimento span {
-    border: 2px solid #A92E2C;
+  border: 2px solid #a92e2c;
 }
 
 /* OPÇÕES DE MOVIMENTO */
 
 .grupo-movimento {
-    border: none;
-    padding: 0;
-    margin: 0;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .grupo-movimento legend {
-    color: #12313B;
-    font-weight: 500;
-    margin-bottom: 12px;
+  color: #12313b;
+  font-weight: 500;
+  margin-bottom: 12px;
 }
 
 .opcoes-movimento {
-    display: flex;
-    gap: 12px;
+  display: flex;
+  gap: 12px;
 }
 
 .campo-simulador .opcao-movimento {
-    position: relative;
-    cursor: pointer;
-    margin-bottom: 0;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 0;
 }
 
 /* Mantém o radio acessível ao teclado */
 .opcao-movimento input[type="radio"] {
-    position: absolute;
-    opacity: 0;
-    width: 1px;
-    height: 1px;
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
 }
 
 /* Aparência dos botões */
 .opcao-movimento span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 120px;
-    padding: 12px 20px;
-    background-color: #FFFFFF;
-    color: #12313B;
-    border: 1px solid #71858E;
-    border-radius: 8px;
-    font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  padding: 12px 20px;
+  background-color: #ffffff;
+  color: #12313b;
+  border: 1px solid #71858e;
+  border-radius: 8px;
+  font-weight: 500;
 }
 
 /* Ao selecionar uma opção */
 .opcao-movimento input:checked + span {
-    background-color: #20C7BE;
-    color: #12313B;
-    border: 2px solid #006C68;
-    font-weight: 600;
+  background-color: #20c7be;
+  color: #12313b;
+  border: 2px solid #006c68;
+  font-weight: 600;
 }
 
 /* Ao passar o mouse */
 .opcao-movimento:hover span {
-    background-color: #EAF7F8;
+  background-color: #eaf7f8;
 }
 
 .opcao-movimento input:checked + span:hover {
-    background-color: #20C7BE;
+  background-color: #20c7be;
 }
 
 /* Foco ao navegar com o teclado */
 .opcao-movimento input:focus-visible + span {
-    outline: 3px solid #006C68;
-    outline-offset: 3px;
+  outline: 3px solid #006c68;
+  outline-offset: 3px;
 }
 
 /* RESULTADOS */
@@ -780,65 +780,64 @@ main section.pagina-simulador {
   font-size: 18px;
 }
 
-
 /* RESULTADOS */
 
 .simulador-status {
-    background-color: #EAF7F8;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 16px;
+  background-color: #eaf7f8;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
 }
 
 .simulador-status span {
-    display: block;
-    color: #536B75;
-    font-size: 12px;
-    font-weight: 600;
-    margin-bottom: 8px;
+  display: block;
+  color: #536b75;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 
 .simulador-status strong {
-    color: #12313B;
-    font-size: 18px;
+  color: #12313b;
+  font-size: 18px;
 }
 
 /* ESTADOS VISUAIS DO SIMULADOR */
 
 .simulador-status.status-normal {
-    background-color: #E7F5F2;
-    border-left: 4px solid #006C68;
+  background-color: #e7f5f2;
+  border-left: 4px solid #006c68;
 }
 
 .simulador-status.status-normal strong {
-    color: #006C68;
+  color: #006c68;
 }
 
 .simulador-status.status-atencao {
-    background-color: #FFF1DE;
-    border-left: 4px solid #924300;
+  background-color: #fff1de;
+  border-left: 4px solid #924300;
 }
 
 .simulador-status.status-atencao strong {
-    color: #924300;
+  color: #924300;
 }
 
 .simulador-status.status-calor {
-    background-color: #FCE9E8;
-    border-left: 4px solid #A92E2C;
+  background-color: #fce9e8;
+  border-left: 4px solid #a92e2c;
 }
 
 .simulador-status.status-calor strong {
-    color: #A92E2C;
+  color: #a92e2c;
 }
 
 .simulador-status.status-sem-movimento {
-    background-color: #EAF7F8;
-    border-left: 4px solid #536B75;
+  background-color: #eaf7f8;
+  border-left: 4px solid #536b75;
 }
 
 .simulador-status.status-sem-movimento strong {
-    color: #12313B;
+  color: #12313b;
 }
 
 .simulador-dado {
@@ -861,10 +860,241 @@ main section.pagina-simulador {
 /* INFORMAÇÕES ADICIONAIS */
 
 .simulador-observacao {
-    color: #536B75;
-    font-size: 14px;
-    max-width: none;
-    margin-top: 24px;
+  color: #536b75;
+  font-size: 14px;
+  max-width: none;
+  margin-top: 24px;
+}
+
+/* PÁGINA PONTOS ANALISADOS */
+
+main section.pagina-pontos {
+  background-color: #f5fbfc;
+  padding: 56px 0 64px;
+}
+
+/* INTRODUÇÃO */
+
+.analise-introducao {
+  margin-bottom: 36px;
+}
+
+.analise-etiqueta {
+  color: #006c68;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.analise-introducao h1 {
+  font-size: 36px;
+  font-family: "Sora", sans-serif;
+  color: #0f3d4c;
+  margin-bottom: 16px;
+}
+
+.analise-introducao p {
+  color: #536b75;
+  max-width: 750px;
+}
+
+/* SELEÇÃO DOS PONTOS */
+
+.seletor-pontos {
+  margin-bottom: 24px;
+}
+
+.seletor-pontos h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.botoes-pontos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.botao-ponto {
+  padding: 12px 28px;
+  border: 1px solid #71858e;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #12313b;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.botao-ponto:hover {
+  background-color: #eaf7f8;
+}
+
+.botao-ponto.ativo,
+.botao-ponto.ativo:hover {
+  background-color: #20c7be;
+  border: 2px solid #006c68;
+  font-weight: 600;
+}
+
+.botao-ponto:focus-visible {
+  outline: 3px solid #006c68;
+  outline-offset: 3px;
+}
+
+/* PAINEL DO PONTO */
+
+.painel-ponto {
+  background-color: #ffffff;
+  border: 1px solid #d6e8eb;
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.painel-ponto-cabecalho {
+  margin-bottom: 28px;
+}
+
+.painel-ponto-cabecalho h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.painel-ponto-cabecalho p {
+  color: #536b75;
+  margin-bottom: 6px;
+}
+
+/* INDICADORES */
+
+.indicadores-ponto {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.indicador-ponto {
+  background-color: #eaf7f8;
+  border-radius: 8px;
+  padding: 24px 16px;
+}
+
+.indicador-ponto span {
+  display: block;
+  color: #536b75;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.indicador-ponto strong {
+  display: block;
+  color: #0f3d4c;
+  font-family: "Sora", sans-serif;
+  font-size: 26px;
+}
+
+/* OBSERVAÇÕES */
+
+.ponto-observacao {
+  color: #536b75;
+  font-size: 14px;
+  margin-top: 24px;
+  max-width: none;
+}
+
+.analise-aviso {
+  color: #536b75;
+  font-size: 13px;
+  margin-top: 20px;
+  max-width: none;
+}
+
+/* RANKING DE PRIORIDADE */
+
+.ranking-pontos {
+  background-color: #ffffff;
+  border: 1px solid #d6e8eb;
+  border-radius: 12px;
+  padding: 32px;
+  margin-top: 24px;
+}
+
+.ranking-introducao {
+  margin-bottom: 28px;
+}
+
+.ranking-introducao h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.ranking-introducao p {
+  color: #536b75;
+}
+
+.ranking-lista {
+  list-style: none;
+}
+
+.ranking-item {
+  margin-bottom: 24px;
+}
+
+.ranking-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.ranking-topo strong {
+  color: #12313b;
+  font-weight: 600;
+}
+
+.ranking-topo span {
+  display: block;
+  color: #536b75;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.ranking-trilha {
+  width: 100%;
+  height: 12px;
+  background-color: #eaf7f8;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.ranking-barra {
+  height: 100%;
+  background-color: #20c7be;
+  border-radius: 20px;
+}
+
+.ranking-a {
+  width: 100%;
+}
+
+.ranking-b {
+  width: 50%;
+}
+
+.ranking-c {
+  width: 16.67%;
+}
+
+.ranking-explicacao {
+  color: #536b75;
+  font-size: 14px;
+  border-top: 1px solid #d6e8eb;
+  padding-top: 20px;
+  margin-top: 8px;
+  max-width: none;
 }
 
 /* RODAPÉ */
@@ -1074,25 +1304,62 @@ footer {
 /* PÁGINA SIMULADOR EM TELAS MENORES */
 
 @media (max-width: 768px) {
-    main section.pagina-simulador {
-        padding: 48px 0;
-    }
+  main section.pagina-simulador {
+    padding: 48px 0;
+  }
 
-    .simulador-introducao h1 {
-        font-size: 28px;
-    }
+  .simulador-introducao h1 {
+    font-size: 28px;
+  }
 
-    .simulador-layout {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
+  .simulador-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 
-    .simulador-painel {
-        padding: 24px;
-    }
+  .simulador-painel {
+    padding: 24px;
+  }
 
-    .simulador-painel h2 {
-        font-size: 20px;
-    }
+  .simulador-painel h2 {
+    font-size: 20px;
+  }
 }
 
+/* PONTOS ANALISADOS EM TELAS MENORES */
+
+@media (max-width: 1024px) {
+  .indicadores-ponto {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  main section.pagina-pontos {
+    padding: 48px 0;
+  }
+
+  .analise-introducao h1 {
+    font-size: 28px;
+  }
+
+  .painel-ponto {
+    padding: 24px;
+  }
+
+  .indicadores-ponto {
+    grid-template-columns: 1fr;
+  }
+
+  .botao-ponto {
+    padding: 12px 20px;
+  }
+
+  .ranking-pontos {
+    padding: 24px;
+  }
+
+  .ranking-introducao h2 {
+    font-size: 22px;
+  }
+}
