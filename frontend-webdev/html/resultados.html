@@ -43,29 +43,116 @@
     </header>
 
     <main>
-      <section>
+      <section class="pagina-resultados">
         <div class="container">
-          <h1>Resultados do Ponto Fresco</h1>
+          <!-- INTRODUÇÃO -->
 
-          <p>
-            Conheça os resultados das simulações desenvolvidas para avaliar o
-            funcionamento do Ponto Fresco.
+          <div class="resultados-introducao">
+            <p class="resultados-etiqueta">RESULTADOS DAS SIMULAÇÕES</p>
+
+            <h1>O que as simulações mostram?</h1>
+
+            <p>
+              A modelagem matemática do Ponto Fresco permitiu analisar
+              diferentes cenários de temperatura e estimar o consumo energético
+              da ventilação.
+            </p>
+          </div>
+
+          <!-- INDICADORES DE ECONOMIA -->
+
+          <div class="resultados-resumo">
+            <article class="resultado-indicador">
+              <span>Dia ameno</span>
+              <strong>84,7%</strong>
+              <p>Economia energética estimada</p>
+            </article>
+
+            <article class="resultado-indicador">
+              <span>Dia quente</span>
+              <strong>51,8%</strong>
+              <p>Economia energética estimada</p>
+            </article>
+
+            <article class="resultado-indicador">
+              <span>Onda de calor</span>
+              <strong>37,2%</strong>
+              <p>Economia energética estimada</p>
+            </article>
+          </div>
+
+          <!-- GRÁFICO DE ENERGIA -->
+
+          <div class="resultados-grafico">
+            <h2>Consumo energético estimado</h2>
+
+            <p>
+              O gráfico compara o consumo da ventilação sob demanda com o
+              funcionamento contínuo nos três cenários simulados.
+            </p>
+
+            <figure>
+              <img
+                src="../assets/images/graficos/4_energia_cenarios.png"
+                alt="Gráfico comparativo do consumo energético da ventilação sob demanda e contínua nos cenários de dia ameno, dia quente e onda de calor."
+              />
+
+              <figcaption>
+                Comparação do consumo diário de energia em Wh, conforme a
+                modelagem matemática do projeto.
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- GRÁFICO DE TEMPERATURA -->
+
+          <div class="resultados-grafico">
+            <h2>Temperatura ao longo do dia</h2>
+
+            <p>
+              A modelagem também permitiu representar a variação da temperatura
+              durante 24 horas em três cenários.
+            </p>
+
+            <figure>
+              <img
+                src="../assets/images/graficos/1_temperatura_cenarios.png"
+                alt="Gráfico da temperatura ao longo de 24 horas nos cenários de dia ameno, dia quente e onda de calor, com limites de 30 e 35 graus Celsius."
+              />
+
+              <figcaption>
+                Os limites de 30 °C e 35 °C representam as faixas experimentais
+                utilizadas pelo Ponto Fresco.
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- RELAÇÃO COM PYTHON -->
+
+          <div class="resultados-conclusao">
+            <h2>E os pontos de ônibus?</h2>
+
+            <p>
+              Além dos cenários matemáticos, utilizamos Python para analisar
+              dados simulados de três pontos de ônibus da Zona Norte do Rio de
+              Janeiro.
+            </p>
+
+            <p>
+              A comparação permite visualizar indicadores de temperatura e um
+              índice experimental de prioridade para melhorias.
+            </p>
+
+            <a href="pontos.html" class="botao-principal">
+              Conhecer os pontos analisados
+            </a>
+          </div>
+
+          <p class="resultados-aviso">
+            Todos os resultados são experimentais e baseados em simulações. Não
+            representam medições ambientais reais nem comprovam redução de
+            temperatura em abrigos físicos.
           </p>
-
-          <p>
-            Nesta página apresentaremos os gráficos de Matemática, as
-            estimativas de consumo energético e os indicadores obtidos nas
-            análises em Python.
-          </p>
-
-          <p>
-            Os resultados são experimentais e não representam medições
-            realizadas em pontos de ônibus.
-          </p>
-
-          <a href="../index.html" class="botao-principal">
-            Voltar à página inicial
-          </a>
         </div>
       </section>
     </main>

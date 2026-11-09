@@ -1097,6 +1097,146 @@ main section.pagina-pontos {
   max-width: none;
 }
 
+/* PÁGINA DE RESULTADOS */
+
+main section.pagina-resultados {
+  background-color: #f5fbfc;
+  padding: 56px 0 64px;
+}
+
+/* INTRODUÇÃO */
+
+.resultados-introducao {
+  margin-bottom: 32px;
+}
+
+.resultados-etiqueta {
+  color: #006c68;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.resultados-introducao h1 {
+  font-family: "Sora", sans-serif;
+  color: #0f3d4c;
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.resultados-introducao p {
+  color: #536b75;
+  max-width: 750px;
+}
+
+/* INDICADORES */
+
+.resultados-resumo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.resultado-indicador {
+  background-color: #ffffff;
+  border: 1px solid #d6e8eb;
+  border-radius: 12px;
+  padding: 28px;
+}
+
+.resultado-indicador span {
+  display: block;
+  color: #536b75;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.resultado-indicador strong {
+  display: block;
+  font-family: "Sora", sans-serif;
+  font-size: 40px;
+  color: #006c68;
+  margin-bottom: 12px;
+}
+
+.resultado-indicador p {
+  color: #536b75;
+  font-size: 14px;
+}
+
+/* GRÁFICOS */
+
+.resultados-grafico {
+    background-color: #FFFFFF;
+    border: 1px solid #D6E8EB;
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 24px;
+}
+
+.resultados-grafico h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.resultados-grafico p {
+  color: #536b75;
+  margin-bottom: 24px;
+  max-width: none;
+}
+
+.resultados-grafico img {
+    display: block;
+    width: 100%;
+    max-width: 760px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.resultados-grafico figcaption {
+  color: #536b75;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.resultados-grafico figure {
+    margin: 0;
+}
+
+/* CONCLUSÃO */
+
+.resultados-conclusao {
+  margin-top: 24px;
+  padding: 32px;
+  background-color: #eaf7f8;
+  border-radius: 12px;
+}
+
+.resultados-conclusao h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.resultados-conclusao p {
+  color: #536b75;
+  margin-bottom: 16px;
+}
+
+.resultados-conclusao .botao-principal {
+  margin-top: 12px;
+}
+
+/* OBSERVAÇÃO FINAL */
+
+.resultados-aviso {
+  color: #536b75;
+  font-size: 13px;
+  max-width: none;
+  margin-top: 24px;
+}
+
 /* RODAPÉ */
 
 footer {
@@ -1361,5 +1501,43 @@ footer {
 
   .ranking-introducao h2 {
     font-size: 22px;
+  }
+}
+
+/* RESULTADOS EM TELAS MENORES */
+
+@media (max-width: 768px) {
+  main section.pagina-resultados {
+    padding: 48px 0;
+  }
+
+  .resultados-introducao h1 {
+    font-size: 28px;
+  }
+
+  .resultados-resumo {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .resultado-indicador {
+    padding: 24px;
+  }
+
+  .resultado-indicador strong {
+    font-size: 32px;
+  }
+
+  .resultados-grafico {
+    padding: 20px;
+  }
+
+  .resultados-grafico h2,
+  .resultados-conclusao h2 {
+    font-size: 22px;
+  }
+
+  .resultados-conclusao {
+    padding: 24px;
   }
 }
